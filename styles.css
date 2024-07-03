@@ -98,11 +98,56 @@ input {
     margin-right: 10px;
 }
 
-
-
 .action-bar {
   background-color: var(--rose-red);
   color: var(--white);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 10px 0px;
+}
+
+.action-bar .left{
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-start;   
+    align-items: center;
+    gap: 10px;   
+}
+
+.action-bar .greeting p{
+    font-size: smaller;
+    font-weight: lighter;
+    margin: 0;
+    color: rgba(254, 255, 250, 0.70);
+}
+
+.action-bar .greeting h4{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.action-bar .right{
+    display: flex;
+    justify-content: center;
+}
+
+.action-bar button {
+    border: 0;
+    padding: 10px;
+    background-color: var(--honolulu-blue);
+    border-radius: 5px;
+    margin-left: 10px;
+    color: var(--white);
+}
+
+.action-bar button:hover {
+    background-color: hsl(201, 85%, 50%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.action-bar button:active {
+    background-color: hsl(201, 85%, 30%);
 }
 
 .main {
