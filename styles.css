@@ -207,10 +207,6 @@ input {
     justify-content: end;
 }
 
-.main .mutuals {
-  grid-area: 2 / 2 / 2 / 2;
-}
-
 .card button {
     background-color: transparent;
     border-radius: 5px;
