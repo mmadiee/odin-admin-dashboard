@@ -174,7 +174,8 @@ input {
   border-radius: 5px;
 }
 
-.main .trending{
+.main .trending,
+.main .mutuals {
   border-radius: 5px;
   padding: 24px;
 }
@@ -194,25 +195,68 @@ input {
   color: var(--honolulu-blue);
 }
 
-.main .trending .trend{
-    margin-top: 16px;
+.main .trending .trend {
+  margin-top: 16px;
 }
 
 .main .trending .trend h5,
 .main .trending .trend p {
-    margin: 0;
+  margin: 0;
 }
 
-.main .trending .trend h5:hover{
-    color: var(--rose-red);
-    cursor: pointer;
-    transition: 0.5s;
-
+.main .trending .trend h5:hover {
+  color: var(--rose-red);
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .main .trending .trend p {
-    font-size: 10px;
-    color: #3b3b3b;
+  font-size: 10px;
+  color: #3b3b3b;
+}
+
+.main .mutuals > h5 {
+  margin: 0;
+  color: var(--rose-red);
+}
+
+.mutuals .profile {
+  margin-top: 15px;
+}
+
+.profile .name {
+  margin-left: 10px;
+}
+
+.profile .name h5,
+.profile .name p {
+  margin: 0;
+}
+
+.profile .name p {
+  font-size: x-small;
+}
+
+.main .mutuals button {
+  border: 0;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.main .mutuals button:hover {
+  background-color: rgba(59, 59, 59, 0.2);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.main .mutuals .profile {
+  display: flex;
+
+}
+
+.name {
+  flex-grow: 1; 
+  margin-left: 10px;
 }
 
 /* width */
