@@ -8,7 +8,7 @@
   --white: #fefff8;
 }
 body {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   background-color: #efefef;
   margin: 0;
 }
@@ -20,6 +20,14 @@ img {
 .container {
   display: grid;
   grid-template-columns: 1fr 4fr;
+}
+
+.sidebar .sidebar-item,
+.search .left, .search .right,
+.action-bar,
+.main .mutuals .profile {
+  display: flex;
+  align-items: center;
 }
 
 .sidebar {
@@ -48,7 +56,49 @@ img {
 
 .search {
   background-color: var(--carrot-orange);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
 }
+
+.search .left{
+    padding-left: 20px;
+}
+
+.search .right{
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    height: 20px;
+    width: 50%;
+    border: solid 1px var(--white);;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+.search button {
+    border: 0;
+    border-radius: 5px;
+    background-color: transparent;
+    margin-left: 5px;
+
+}
+
+.search button:hover {
+    background-color: hsl(29, 89%, 70%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.search img {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+
 
 .action-bar {
   background-color: var(--rose-red);
@@ -89,14 +139,6 @@ img {
 .main .trending,
 .main .mutuals {
   background-color: var(--white);
-}
-
-.sidebar .sidebar-item,
-.search,
-.action-bar,
-.main .mutuals .profile {
-  display: flex;
-  align-items: center;
 }
 
 /* width */
