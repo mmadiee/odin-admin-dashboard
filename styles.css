@@ -128,6 +128,7 @@ input {
 .action-bar .right {
   display: flex;
   justify-content: center;
+  padding: 10px;
 }
 
 .action-bar button {
@@ -165,8 +166,60 @@ input {
   gap: 10px;
 }
 
+.main .cards .card {
+  padding: 15px;
+}
+
+.main .cards .card .name h5,
+.main .cards .card .name p {
+  margin: 0;
+}
+
+.main .cards .card .name p {
+    font-size: x-small;
+}
+
+.main .cards .card {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.card img {
+    grid-area: 1 / 1 / 1 / 1;
+}
+
+.card .name {
+    grid-area: 1 / 2 / 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card .post {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.card .buttons {
+    grid-area: 4 / 1 / 5 / 3;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
 .main .mutuals {
   grid-area: 2 / 2 / 2 / 2;
+}
+
+.card button {
+    background-color: transparent;
+    border-radius: 5px;
+    border: 0;
+}
+
+.card button:hover {
+    background-color: rgba(59, 59, 59, 0.2);
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 .main .cards .card {
@@ -251,11 +304,10 @@ input {
 
 .main .mutuals .profile {
   display: flex;
-
 }
 
 .name {
-  flex-grow: 1; 
+  flex-grow: 1;
   margin-left: 10px;
 }
 
