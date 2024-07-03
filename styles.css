@@ -67,7 +67,8 @@ img {
 
 .search .right {
   display: flex;
-  justify-content: center;
+  justify-content: end;
+  padding-right: 20px;
 }
 
 input {
@@ -127,8 +128,8 @@ input {
 
 .action-bar .right {
   display: flex;
-  justify-content: center;
-  padding: 10px;
+  justify-content: end;
+  padding-right: 20px;
 }
 
 .action-bar button {
